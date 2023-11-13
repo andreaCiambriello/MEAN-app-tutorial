@@ -1,0 +1,5 @@
+Learn Node + Express from Scratch (for free!): https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
+Creating a REST API with Node + Express (+ MongoDB): https://academind.com/learn/node-js/building-a-restful-api-with/
+Mongoose Docs: http://mongoosejs.com/docs/guide.html
+MongoDB Docs: https://www.mongodb.com/
+MongoDB Atlas Docs: https://www.mongodb.com/cloud/atlas
