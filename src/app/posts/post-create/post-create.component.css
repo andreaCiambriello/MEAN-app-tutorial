@@ -6,3 +6,7 @@ textarea {
 button {
     width: fit-content;
 }
+
+mat-spinner {
+    margin: auto;
+}
