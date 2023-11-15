@@ -1,12 +1,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+require('dotenv').config({ path: './.env'});
+
+console.log(process.env.DATABASE_URL)
+
+const databaseUrl = process.env.DATABASE_URL
 
 const postsRoutes = require('./routes/posts');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://andreaciambriello:4CdZQcMwPfpnVIy9@cluster0.bnl3jxn.mongodb.net/mean?retryWrites=true&w=majority')
+mongoose.connect(databaseUrl)
     .then(() => {
         console.log('Connected to database!')
     })
