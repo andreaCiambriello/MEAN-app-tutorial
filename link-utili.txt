@@ -3,3 +3,4 @@ Creating a REST API with Node + Express (+ MongoDB): https://academind.com/learn
 Mongoose Docs: http://mongoosejs.com/docs/guide.html
 MongoDB Docs: https://www.mongodb.com/
 MongoDB Atlas Docs: https://www.mongodb.com/cloud/atlas
+Tutorial on Angular Image Upload: https://academind.com/learn/angular/snippets/angular-image-upload-made-easy
