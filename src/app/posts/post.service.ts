@@ -12,7 +12,6 @@ export class PostService {
 
     constructor(private http: HttpClient, private router: Router) {}
 
-    // eseguo una copia dell'array Post con lo spread operator
     getPosts(postsPerPage: number, currentPage: number) {
         const queryParams = `?pagesize=${postsPerPage}&page=${currentPage}`;
         this.http
