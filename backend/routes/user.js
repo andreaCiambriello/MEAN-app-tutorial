@@ -22,7 +22,7 @@ router.post('/signup', (req, res, next) => {
                 })
                 .catch(err => {
                     res.status(500).json({
-                        error: err.message
+                        message: 'Invalid authentication credentials!'
                     });
                 });
         }); 
@@ -33,9 +33,7 @@ router.post('/login', (req, res, next) => {
     User.findOne({ email: req.body.email })
         .then(user => {
             if(!user) {
-                return res.status(401).json({
-                    message: 'Auth failed!'
-                });
+                throw new Error('Auth failed');
             }
             fetchedUser = user;
             return bcrypt.compare(req.body.password, user.password);
@@ -62,7 +60,7 @@ router.post('/login', (req, res, next) => {
         })
         .catch(err => {
             res.status(401).json({
-                message: 'Auth failed!'
+                message: 'Invalid authentication credentials!'
             })
         });
 });
