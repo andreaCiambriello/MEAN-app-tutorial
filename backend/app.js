@@ -2,16 +2,13 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-require('dotenv').config({ path: './.env'});
-
-const databaseUrl = process.env.DATABASE_URL
 
 const postsRoutes = require('./routes/posts');
 const userRoutes = require('./routes/user');
 
 const app = express();
 
-mongoose.connect(databaseUrl)
+mongoose.connect("mongodb+srv://andreaciambriello:" + process.env.MONGO_ATLAS_PW + "@cluster0.bnl3jxn.mongodb.net/mean?retryWrites=true&w=majority")
     .then(() => {
         console.log('Connected to database!')
     })
