@@ -9,3 +9,4 @@ More on JWT: https://jwt.io/introduction/
 Angular Route Guards: https://angular.io/guide/router#milestone-5-route-guards
 More on Angular Interceptors: https://angular.io/guide/http#intercepting-requests-and-responses
 Mongoose Relations (and how you could combine them when fetching data): http://mongoosejs.com/docs/populate.html 
+AWS Elastic Beanstalk Documentation: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html
